@@ -1,0 +1,16 @@
+.splitScreen {
+  display: flex;
+  min-height: 100vh; /* Use at least 100% of the viewport height */
+}
+
+.leftPane {
+  flex: 1;
+  padding: 20px; /* Add some spacing inside the pane */
+  border-right: 2px dotted #000; /* Add a dotted border to the right side of the left pane */
+}
+
+.rightPane {
+  flex: 2; /* Take up the other half */
+  padding: 20px;
+  /* Style as needed */
+}

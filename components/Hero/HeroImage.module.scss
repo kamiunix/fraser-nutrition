@@ -1,0 +1,64 @@
+.heroWrapper {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: center;
+  /* show top of image */
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: row; /* Align items side by side */
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+
+.textContainer {
+  background-color: #ffffff; /* White background */
+  padding: 20px; /* Adjust padding as needed */
+  margin-left: -50px; /* Overlap the profile image */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5); /* Optional: adds shadow for better separation */
+}
+
+.contentImage {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5); /* Optional: adds shadow for better separation */
+  border-radius: 3%; /* Make the image round */
+}
+
+.ctaButton {
+  padding: 10px 20px; /* Adjust padding as needed */
+  margin-top: 10px; /* Add some space between the button and the text */
+  border: none; /* Remove border */
+  cursor: pointer; /* Add pointer cursor on hover */
+  transition: background-color 0.3s; /* Add smooth transition for hover effect */
+  width: 140px;
+  position: relative;
+  left: 35%;
+}
+
+.ctaButton:hover {
+  background-color: #0056b3; /* Darker shade of blue for hover effect */
+}
+
+@media (max-width: 768px) {
+  .heroContent {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start to avoid overlap on small screens */
+  }
+  .textContainer {
+    margin-left: 0; /* Remove overlap on small screens */
+    margin-top: -20px; /* Adjust if you want to keep some overlap */
+  }
+}
