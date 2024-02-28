@@ -17,14 +17,16 @@ export const Footer = () => {
                 }}
             >
                 <h1
-                    style={{
-                        color: "#f6f6f6",
-                    }}
+                    className={"text-blue-100 text-3xl"}
                 >
                     Discover how you can improve your overall well-being.
                 </h1>
                 <br/>
-                <BookNowButton/>
+                <div
+                    className={"flex justify-center"}
+                >
+                    <BookNowButton/>
+                </div>
             </div>
             <footer className={styles.footer}>
                 <div className={styles.footerbottom}>
