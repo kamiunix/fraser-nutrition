@@ -40,7 +40,7 @@ const Sidebar = ({
                 <ul className="sidebar-nav text-center leading-relaxed text-xl">
                     <li>
                         <Link href="/about" onClick={toggle}>
-                            <p>About Us</p>
+                            <p>About Me</p>
                         </Link>
                     </li>
                     <li>
