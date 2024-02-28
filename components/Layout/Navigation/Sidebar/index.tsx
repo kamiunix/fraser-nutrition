@@ -1,4 +1,5 @@
 import Link from "next/link";
+import React from "react";
 
 const Sidebar = ({
                      isOpen,
@@ -7,6 +8,11 @@ const Sidebar = ({
     isOpen: boolean;
     toggle: () => void;
 }): JSX.Element => {
+    const email = 'sandra@frasernutrition.com'
+    const subject = 'General Inquiry'
+    const body = ''
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
     return (
         <>
             <div
@@ -43,8 +49,14 @@ const Sidebar = ({
                         </Link>
                     </li>
                     <li>
-                        <Link href="/contact" onClick={toggle}>
-                            <p>Contact</p>
+                        <Link
+                            href={mailtoLink}
+                        >
+                            <p
+                                className="text-lg"
+                            >
+                                {'Contact'}
+                            </p>
                         </Link>
                     </li>
                 </ul>
