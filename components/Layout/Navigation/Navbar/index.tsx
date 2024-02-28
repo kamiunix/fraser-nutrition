@@ -37,7 +37,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                             <li>
                                 <Link href="/about">
                                     <p
-                                        className="text-lg"
+                                        className="text-2xl"
                                     >
                                         About Me
                                     </p>
@@ -46,7 +46,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                             <li>
                                 <Link href="/faq">
                                     <p
-                                        className="text-lg"
+                                        className="text-2xl"
                                     >
                                         FAQ
                                     </p>
@@ -57,7 +57,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                                     href={mailtoLink}
                                 >
                                     <p
-                                        className="text-lg"
+                                        className="text-2xl"
                                     >
                                         {'Contact'}
                                     </p>

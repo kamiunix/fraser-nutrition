@@ -40,12 +40,20 @@ const Sidebar = ({
                 <ul className="sidebar-nav text-center leading-relaxed text-xl">
                     <li>
                         <Link href="/about" onClick={toggle}>
-                            <p>About Me</p>
+                            <p
+                                className={"text-5xl p-5"}
+                            >
+                                About Me
+                            </p>
                         </Link>
                     </li>
                     <li>
                         <Link href="/faq" onClick={toggle}>
-                            <p>FAQ</p>
+                            <p
+                                className={"text-5xl p-5"}
+                            >
+                                FAQ
+                            </p>
                         </Link>
                     </li>
                     <li>
@@ -53,7 +61,7 @@ const Sidebar = ({
                             href={mailtoLink}
                         >
                             <p
-                                className="text-lg"
+                                className={"text-5xl p-5"}
                             >
                                 {'Contact'}
                             </p>
