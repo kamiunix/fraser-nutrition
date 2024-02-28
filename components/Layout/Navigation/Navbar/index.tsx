@@ -39,7 +39,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                                     <p
                                         className="text-lg"
                                     >
-                                        About Us
+                                        About Me
                                     </p>
                                 </Link>
                             </li>
