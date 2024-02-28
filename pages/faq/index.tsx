@@ -98,7 +98,7 @@ const Services = () => {
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className={"p-2"}
+                            className={"p-4 max-md:w-full"}
                         >
                             <Collapsible
                                 title={faq.question}
