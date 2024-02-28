@@ -27,7 +27,7 @@ const HeroImage = ({
                     width={290}
                     height={400}
                 />
-                <div className="bg-white p-5 md:-ml-12 md:mt-12 max-md:mt-1 shadow-lg flex flex-col justify-center">
+                <div className="bg-white p-5 md:-ml-12 md:mt-12 max-md:mt-2 shadow-lg flex flex-col justify-center">
                     <h1 className="text-center text-3xl p-1">
                         {title}
                     </h1>

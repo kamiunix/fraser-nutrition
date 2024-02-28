@@ -1,12 +1,11 @@
 .collapsible {
-  margin: 1em;
   border: 1px solid #000;
   border-radius: 4px;
   align-items: center;
   overflow: hidden;
   width: auto;
   padding: 1em;
-  /* fix box not fitting all text when expandedz */
+  /* fix box not fitting all text when expanded */
 }
 
 .title {
@@ -16,6 +15,7 @@
   display: flex;
   align-items: center;
   font-size: 1.5em;
+  justify-content: center;
 }
 
 .content {

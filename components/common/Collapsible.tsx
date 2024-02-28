@@ -3,15 +3,7 @@ import styles from './Collapsible.module.scss';
 
 const Collapsible = ({ title, children }) => {
     const [isCollapsed, setIsCollapsed] = useState(true);
-    const [titleWidth, setTitleWidth] = useState(500);
     const titleRef = useRef(null);
-
-    useEffect(() => {
-        // After the component mounts, measure the title width and set it
-        if (titleRef.current) {
-            setTitleWidth(Math.max(Math.min(titleRef.current.offsetWidth * 1.2, 10000), 600));
-        }
-    }, []);
 
     const toggleCollapse = () => {
         setIsCollapsed(!isCollapsed);

@@ -81,28 +81,31 @@ const Services = () => {
                 </div>
             </WideImage>
             <div
-                className={"md:ml-10 max-md:ml-2 md:mr-10 max-md:mr-2"}
+                className={"md:ml-32 max-md:ml-2 md:mr-32 max-md:mr-2 mt-20 mb-20"}
                 style={{
-                    marginTop: "2em",
-                    marginBottom: "2em",
                     textAlign: "center",
                     backgroundColor: "#FCFCFC",
                 }}
             >
-                <div style={{
+                <div
+                style={{
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    height: '100vh' // this will take the full height of the viewport
+                    height: 'auto' // this will take the full height of the viewport
                 }}>
                     {faqs.map((faq, index) => (
-                        <Collapsible
+                        <div
                             key={index}
-                            title={faq.question}
+                            className={"p-2"}
                         >
-                            <p>{faq.answer}</p>
-                        </Collapsible>
+                            <Collapsible
+                                title={faq.question}
+                            >
+                                <p>{faq.answer}</p>
+                            </Collapsible>
+                        </div>
                     ))}
                 </div>
             </div>

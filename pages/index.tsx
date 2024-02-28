@@ -36,9 +36,13 @@ const IndexPage = () => {
                 {/*    textColor={'white'}*/}
                 {/*/>*/}
             </div>
-            <Services
-                title={'My Services'}
-            />
+            <div
+                className={"pb-20 pt-20"}
+            >
+                <Services
+                    title={'My Services'}
+                />
+            </div>
         </Layout>
     );
 }
