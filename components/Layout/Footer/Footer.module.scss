@@ -1,8 +1,6 @@
 .footer {
     background-color: #efefef;
-    padding: 3rem;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    padding: 2rem 1rem; // Start with smaller padding for mobile devices
     font-family: Arial, sans-serif;
     color: #666;
 }
@@ -56,18 +54,21 @@
 
 .footerbottom {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; // Stack elements vertically on small screens
+    align-items: center; // Center-align for small screens
+    text-align: center;
 }
 
 .footerbottom ul {
     display: flex;
-    list-style: none;
+    flex-wrap: wrap; // Allow the list to wrap on small screens
+    justify-content: center; // Center-align the list items
     padding: 0;
+    margin: 0;
 }
 
 .footerbottom ul li {
-    margin-right: 1rem;
+    margin: 0.5rem; // Adjust spacing around each list item}
 }
 
 .footerbottom ul li a {
@@ -86,4 +87,23 @@
 .socialicon {
     color: #666;
     text-decoration: none;
+    margin: 0.2rem;
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (min-width: 768px) {
+    .footer {
+        padding: 3rem 20rem; // Increase padding for larger screens
+    }
+
+    .footerbottom {
+        flex-direction: row; // Use row layout for larger screens
+        justify-content: space-between; // Distribute space between elements
+        align-items: center;
+        text-align: left;
+    }
+
+    .footerbottom ul {
+        flex-wrap: nowrap; // Prevent list from wrapping on large screens
+    }
 }

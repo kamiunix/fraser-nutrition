@@ -1,5 +1,5 @@
 import styles from "./tos.module.css";
-import Layout from "../../../components/Layout";
+import Layout from "../../../components/Layout/Layout";
 
 interface Props {
 }

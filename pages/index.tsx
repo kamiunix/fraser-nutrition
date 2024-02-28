@@ -1,8 +1,9 @@
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 import HeroImage from "../components/Hero/HeroImage";
 import Services from "../components/Services/Services";
 import Button from "../components/common/Button";
 import React from "react";
+import {BookNowButton} from "../components/common/EmailButton";
 
 const IndexPage = () => {
 
@@ -21,27 +22,22 @@ const IndexPage = () => {
                 onclick={onClick}
             />
             <div
-                style={{
-                    textAlign: "center",
-                    fontSize: "1.5em",
-                    padding: "2em",
-                    backgroundColor: "#FCFCFC",
-                }}
+                className="flex flex-col items-center justify-center p-8"
             >
-                <h1>
+                <h1
+                    className="text-4xl text-center font-bold text-gray-800 p-4"
+                >
                     Therapeutic services in
                     <br/>a supportive environment
                 </h1>
-                <Button
-                    size={'small'}
-                    color={'teal'}
-                >
-                    Book Now
-                </Button>
+                <br/>
+                {/*<BookNowButton*/}
+                {/*    color={'teal'}*/}
+                {/*    textColor={'white'}*/}
+                {/*/>*/}
             </div>
-
             <Services
-                title={'Our Services'}
+                title={'My Services'}
             />
         </Layout>
     );

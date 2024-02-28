@@ -1,5 +1,5 @@
 import styles from "./cookies.module.css";
-import Layout from "../../../components/Layout";
+import Layout from "../../../components/Layout/Layout";
 
 interface Props {
 }

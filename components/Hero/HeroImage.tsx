@@ -1,31 +1,17 @@
-// HeroImage.jsx
+import Image from 'next/image';
+import Button from '../common/Button'; // Ensure your Button component is compatible with Tailwind or adjust accordingly.
 
-import Image from "next/image";
-import styles from "./HeroImage.module.scss";
-import Button from "../common/Button";
-
-const { heroContent, heroImage, heroWrapper, textContainer, contentImage, ctaButton } = styles;
-
-interface HeroImageProps {
-    background: string;
-    image: string;
-    title: string;
-    description: string;
-    onclick: () => void;
-}
-const HeroImage = (
-    {
-        background,
-        image,
-        title,
-        description,
-        onclick
-    }: HeroImageProps
-) => {
+const HeroImage = ({
+                       background,
+                       image,
+                       title,
+                       description,
+                       onclick,
+                   }) => {
     return (
-        <div className={heroWrapper}>
+        <div className="relative w-screen h-screen text-center">
             <Image
-                className={heroImage}
+                className="object-cover object-center"
                 priority
                 fill
                 src={background}
@@ -33,29 +19,27 @@ const HeroImage = (
                 quality={100}
             />
 
-            <div className={heroContent}>
+            <div className="absolute md:top-10 max-md:top-20 left-10 flex flex-col md:flex-row items-center justify-center w-4/5 h-4/5">
                 <Image
-                    className={contentImage}
+                    className="shadow-lg rounded-md"
                     src={image}
                     alt={'Sandra Fraser Image'}
                     width={290}
                     height={400}
                 />
-                <div className={textContainer}> {/* Add this wrapper */}
-                    <h1>
+                <div className="bg-white p-5 md:-ml-12 md:mt-12 max-md:mt-1 shadow-lg flex flex-col justify-center">
+                    <h1 className="text-center text-3xl p-1">
                         {title}
                     </h1>
-                    <p>
+                    <p className="text-center text-xl p-0.5">
                         {description}
                     </p>
-                    <Button
-                        size={"small"}
+                    <button
                         onClick={onclick}
-                        color={"#007bff"}
-                        className={ctaButton}
+                        className="mx-auto mt-5 mb-3 text-lg bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
                     >
                         Learn More
-                    </Button>
+                    </button>
                 </div>
             </div>
         </div>

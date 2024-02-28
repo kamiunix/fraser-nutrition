@@ -29,13 +29,7 @@ const HeroImage = (
             />
 
             <div className={content}>
-                <Container
-                    style={{
-                        height: "100%",
-                    }}
-                >
-                    {children}
-                </Container>
+                {children}
             </div>
         </div>
     );

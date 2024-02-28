@@ -1,25 +1,20 @@
 import React from 'react';
-import styles from './SplitScreen.module.scss'; // Make sure to create a corresponding CSS file
-
-const { splitScreen, leftPane, rightPane } = styles;
 
 interface SplitScreenProps {
     leftChildren?: React.ReactNode;
     rightChildren?: React.ReactNode;
 }
 
-const SplitScreen = (
-    {
-        leftChildren,
-        rightChildren
-    }: SplitScreenProps
-) => {
+const SplitScreen = ({
+                         leftChildren,
+                         rightChildren
+                     }: SplitScreenProps) => {
     return (
-        <div className={splitScreen}>
-            <div className={leftPane}>
+        <div className="flex flex-col md:flex-row min-h-screen md:m-10">
+            <div className="w-full md:w-2/6 md:border-r-2 border-dotted border-gray-400 max-md:border-b-2 md:p-4">
                 {leftChildren}
             </div>
-            <div className={rightPane}>
+            <div className="w-full md:w-4/6 md:p-4 max-md:pt-10">
                 {rightChildren}
             </div>
         </div>

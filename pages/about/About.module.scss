@@ -1,0 +1,16 @@
+.mainContent {
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #FCFCFC;
+  padding-top: 2em;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}

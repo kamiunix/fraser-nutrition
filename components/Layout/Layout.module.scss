@@ -1,0 +1,9 @@
+.header-navigation {
+  /* Styles for your header/navigation */
+}
+
+.main-content {
+  flex: 1; /* Takes up available space, pushing the footer down */
+  overflow: auto; /* Adds scrollbar to main content if it overflows */
+}
+
