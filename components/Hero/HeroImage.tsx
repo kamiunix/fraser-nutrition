@@ -21,7 +21,7 @@ const HeroImage = ({
 
             <div className="absolute md:top-10 max-md:top-20 left-10 flex flex-col md:flex-row items-center justify-center w-4/5 h-4/5">
                 <Image
-                    className="shadow-lg rounded-md"
+                    className="shadow-lg rounded-md md:ml-28"
                     src={image}
                     alt={'Sandra Fraser Image'}
                     width={290}

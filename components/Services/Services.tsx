@@ -44,7 +44,7 @@ const Services = ({ background, title }: ServicesProps) => {
     ];
 
     return (
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-4 md:pl-20 md:pr-20">
             {background && (
                 <Image
                     className="absolute inset-0 object-cover w-full h-full"
