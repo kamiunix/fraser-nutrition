@@ -134,23 +134,31 @@ const Team = () => {
                             className={"flex flex-col text-center items-center md:p-5 md:pl-20 md:pr-10"}
                         >
                             <p>
-                                I’m <b>Sandra Fraser</b>, a Registered Dietitian (RD) from Halifax, Nova Scotia. I completed my BSc. in Applied Human Nutrition and Dietetics at Mount Saint Vincent University. I have worked with patients in a variety of settings such as hospital outpatients, private practice and long-term care.
+                                I’m <b>Sandra Fraser</b>, a Registered Dietitian (RD) originating from Halifax, Nova Scotia. I completed my BSc. in Applied Human Nutrition and Dietetics at Mount Saint Vincent University. My work has brought me from coast to coast where I have had the pleasure of meeting a large variety of people in outpatient settings, primary care, long term care and private practice.
                                 <br/>
                                 <br/>
                                 <br/>
-                                My focus is a holistic, evidence-based approach where I use current research to guide you in reaching your optimal nutrition. I do not believe in one-size fits all nutrition recommendations and I will work with you to discover what path best meets your needs and long-term goals.
+                                I have extended my services online to reach a wider audience who are seeking nutrition counselling.
                                 <br/>
                                 <br/>
                                 <br/>
-                                I have experience in gastrointestinal health issues (IBS, IBD), food intolerances and sensitivities, gerontology, diabetes, celiac disease, plant-based diets and much more.
+                                I work closely with clients using a holistic approach to health and wellness. Using current, evidence-based research, we can work together in creating a nutrition plan that works for you. I believe in creating realistic goals that fit your lifestyle using a step by step approach.
                                 <br/>
                                 <br/>
                                 <br/>
-                                I have taken additional courses that focus on counselling for behaviour change, as it is my belief that in order to change our health, we must first change our behaviours.
+                                I’m a strong believer that all foods fit. Small, simple changes can have big impacts with long-lasting effects.
                                 <br/>
                                 <br/>
                                 <br/>
-                                I’m a runner, hiker, climber and mountain lover. In my spare time you can find me in the mountains or outside picking up a new active hobby.
+                                My experience ranges from gastrointestinal health issues (IBS, IBD), food intolerances and sensitivities, gerontology, diabetes (gestational, pre-diabetes, type 1, type 2), celiac disease, heart disease, plant-based diets, gerontology, basic sports nutrition, intuitive eating and much more.
+                                <br/>
+                                <br/>
+                                <br/>
+                                In my free time, you can find me trail running, hiking, rock or ice climbing.
+                                <br/>
+                                <br/>
+                                <br/>
+                                Reach out today and we can have a free 10 minute phone conversation to see if a dietitian consult is right for you.
                             </p>
                         </div>
                     }
