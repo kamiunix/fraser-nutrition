@@ -2,45 +2,10 @@ import Layout from "../../components/Layout/Layout";
 import WideImage from "../../components/WideImage/WideImage";
 import Collapsible from "../../components/common/Collapsible";
 import {useEffect, useState} from "react";
+import faqs from './faq.mock'
 
-const Services = () => {
-    const faqs = [
-        {
-            key: 1,
-            question: "Are all sessions virtual?",
-            answer: "Yes, all sessions are virtual. I use a secure video platform to meet with clients."
-        },
-        {
-            key: 2,
-            question: "What is the difference between a dietitian and a nutritionist?",
-            answer: "Dietitians are regulated health professionals who have a degree in food and nutrition, have completed an internship, and have passed a national exam. Nutritionists are not regulated and do not require a degree in food and nutrition."
-        },
-        {
-            key: 3,
-            question: "What is the cost of a session?",
-            answer: "The cost of a session is $125.00. I do not direct bill insurance companies at this time, but I can provide you with a receipt to submit to your insurance company for reimbursement."
-        },
-        {
-            key: 4,
-            question: "How long is a session?",
-            answer: "The initial session is 60 minutes and follow-up sessions are 45 minutes."
-        },
-        {
-            key: 5,
-            question: "What is your cancellation policy?",
-            answer: "I require 24 hours notice for cancellations. If you cancel with less than 24 hours notice, you will be charged the full session fee."
-        },
-        {
-            key: 6,
-            question: "What is your availability?",
-            answer: "I am available for virtual appointments on Tuesday and Thursday evenings."
-        },
-        {
-            key: 7,
-            question: "What provinces are you licensed to practice in?",
-            answer: "I am licensed to practice in Alberta and British Colombia."
-        }
-    ]
+const Faq = () => {
+
 
     const [title, setTitle] = useState("Frequently Asked Questions");
 
@@ -113,4 +78,4 @@ const Services = () => {
     )
 }
 
-export default Services;
+export default Faq;
