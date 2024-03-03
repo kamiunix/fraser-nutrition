@@ -42,7 +42,7 @@ const faqs = [
     {
         key: 8,
         question: "What provinces are you licensed to practice in?",
-        answer: "I am licensed to practice in Alberta and British Colombia."
+        answer: "I am licensed to practice in Alberta and British Columbia."
     }
 ]
 
