@@ -6,7 +6,10 @@ function MyApp({
                  pageProps: { session, ...pageProps },
 }) {
     return (
-        <Component {...pageProps} />
+        <>
+            <link rel="icon" href="/favicon.png" sizes="any" />
+            <Component {...pageProps} />
+        </>
     )
 }
 
