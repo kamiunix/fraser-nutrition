@@ -2,6 +2,7 @@ import styles from './Footer.module.scss'
 import Link from "next/link";
 import Button from "../../common/Button";
 import {BookNowButton} from "../../common/EmailButton";
+import Image from "next/image";
 
 export const Footer = () => {
 
@@ -101,8 +102,25 @@ export const Footer = () => {
                             <li><Link href="/policies/cookies">Cookies</Link></li>
                         </ul>
                     </div>
-                    <div>
-                        <p>Copyright © 2024 Fraser Nutrition</p>
+                    <div
+                        style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                        }}
+                    >
+                        <p>Copyright © 2024</p>
+                        <Image
+                            style={{
+                                display: "block",
+                                paddingLeft: "1em",
+                            }}
+                            src="/logo3.png"
+                            alt="Fraser Nutrition"
+                            width={70}
+                            height={70}
+                            className="relative"
+                        />
                     </div>
                 </div>
             </footer>
