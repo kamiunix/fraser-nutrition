@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Logo from "./Logo";
 
 const Sidebar = ({
                      isOpen,
@@ -38,6 +39,16 @@ const Sidebar = ({
                 </button>
 
                 <ul className="sidebar-nav text-center leading-relaxed text-xl">
+                    <li
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            paddingBottom: "20px",
+                        }}
+                    >
+                        <Logo />
+                    </li>
                     <li>
                         <Link href="/about" onClick={toggle}>
                             <p
