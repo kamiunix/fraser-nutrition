@@ -24,7 +24,7 @@ const Logo = () => {
             <Link href="/" style={{ display: "block" }}>
                 <Label>
                     <Image
-                        src="/logo2.png"
+                        src="/logo.png"
                         alt=""
                         width={width < 768 ? 150 : 200}
                         height={width < 768 ? 150 : 200}

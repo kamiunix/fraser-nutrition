@@ -115,7 +115,7 @@ export const Footer = () => {
                                 display: "block",
                                 paddingLeft: "1em",
                             }}
-                            src="/logo3.png"
+                            src="/submark.png"
                             alt="Fraser Nutrition"
                             width={70}
                             height={70}

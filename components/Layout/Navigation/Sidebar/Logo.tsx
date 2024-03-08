@@ -11,7 +11,7 @@ const Logo = () => {
             <Link href="/" style={{ display: "block" }}>
                 <Label>
                     <Image
-                        src="/logo.png"
+                        src="/darklogo.png"
                         alt=""
                         width={150}
                         height={150}

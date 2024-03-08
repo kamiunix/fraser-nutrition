@@ -7,7 +7,7 @@ function MyApp({
 }) {
     return (
         <>
-            <link rel="icon" href="/favicon.png" sizes="any" />
+            <link rel="shortcut icon" href="/images/favicon.png" />
             <Component {...pageProps} />
         </>
     )
