@@ -36,7 +36,8 @@ const HeroImage = ({
                     </p>
                     <button
                         onClick={onclick}
-                        className="mx-auto mt-5 mb-3 text-lg bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+                        className="mx-auto mt-5 mb-3 text-lg py-2 px-4 bg-blue-500 text-white rounded hover:bg-green-500 transition duration-300 w-32 cursor-pointer hover:shadow-lg hover:scale-105 transform ease-in-out"
+
                     >
                         Learn More
                     </button>
