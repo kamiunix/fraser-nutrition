@@ -69,12 +69,13 @@ const Sidebar = ({
                     </li>
                     <li>
                         <Link
-                            href={mailtoLink}
+                            href={"/contact"}
+                            onClick={toggle}
                         >
                             <p
                                 className={"text-5xl p-5"}
                             >
-                                {'Contact'}
+                                Contact
                             </p>
                         </Link>
                     </li>

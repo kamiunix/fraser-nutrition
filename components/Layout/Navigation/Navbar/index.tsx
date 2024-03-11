@@ -54,12 +54,12 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                             </li>
                             <li>
                                 <Link
-                                    href={mailtoLink}
+                                    href="/contact"
                                 >
                                     <p
                                         className="text-2xl"
                                     >
-                                        {'Contact'}
+                                        Contact
                                     </p>
                                 </Link>
                             </li>
