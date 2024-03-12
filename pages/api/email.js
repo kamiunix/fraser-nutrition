@@ -4,7 +4,7 @@ export default async function handler(req, res) {
 
     if (req.method === "POST") {
         const data = req.body;
-        if (!data.email || !data.name || !data.phone || !data.message) {
+        if (!data.email || !data.name || !data.phone) {
             return res.status(400).json(
                 {
                     status: "error",
@@ -18,7 +18,7 @@ export default async function handler(req, res) {
                 from: process.env.EMAIL,
                 to: process.env.BOOKING_EMAIL,
                 subject: "New Message from " + data.name,
-                text: `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone}\nMessage: ${data.message}`,
+                text: `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone}\nMessage: ${data.message || ''} `,
                 html: `
                     <h1>New Message from ${data.name}</h1>
                     <p><strong>Name:</strong> ${data.name}</p>
