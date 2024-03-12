@@ -9,7 +9,7 @@ function MyApp({
 }) {
     return (
         <>
-            <Anlytics/>
+            <Analytics/>
             <SpeedInsights/>
             <link rel="shortcut icon" href="/images/favicon.png" />
             <Component {...pageProps} />
